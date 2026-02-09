@@ -1,6 +1,4 @@
-/* =========================
-   CSS RESET
-========================= */
+
 *,
 *::before,
 *::after {
@@ -9,17 +7,13 @@
   box-sizing: border-box;
 }
 
-/* =========================
-   ROOT VARIABLES
-========================= */
+
 :root {
-  /* Primary */
   --light-red: hsl(0, 100%, 67%);
   --orangey-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
 
-  /* Gradients */
   --bg-gradient: linear-gradient(
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
@@ -30,16 +24,13 @@
     hsla(241, 72%, 46%, 0)
   );
 
-  /* Neutral */
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
-/* =========================
-   BASE STYLES
-========================= */
+
 body {
   min-height: 100vh;
   font-family: 'Hanken Grotesk', sans-serif;
@@ -50,9 +41,7 @@ body {
   justify-content: center;
 }
 
-/* =========================
-   MAIN CARD
-========================= */
+
 .card {
   width: 100%;
   max-width: 740px;
@@ -63,9 +52,7 @@ body {
   grid-template-columns: 1fr;
 }
 
-/* =========================
-   RESULT SECTION
-========================= */
+
 .result {
   background: var(--bg-gradient);
   color: var(--light-lavender);
@@ -117,9 +104,7 @@ body {
   margin: 0 auto;
 }
 
-/* =========================
-   SUMMARY SECTION
-========================= */
+
 .summary {
   padding: 2rem;
 }
@@ -139,16 +124,41 @@ body {
   margin-bottom: 2rem;
 }
 
+
 .summary-list li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
   font-size: 1rem;
 }
 
-/* Category colors with transparency */
+.summary-list .left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.summary-list img {
+  width: 20px;
+  height: 20px;
+}
+
+.summary-list .right {
+  font-weight: 700;
+  color: var(--dark-gray-blue);
+}
+
+.summary-list .right span {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+
+
+
 .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
   color: var(--light-red);
@@ -174,9 +184,7 @@ body {
   font-weight: 700;
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 .btn {
   width: 100%;
   padding: 1rem;
@@ -193,9 +201,7 @@ body {
   background: var(--bg-gradient);
 }
 
-/* =========================
-   DESKTOP LAYOUT
-========================= */
+
 @media (min-width: 768px) {
   .card {
     grid-template-columns: 1fr 1fr;
@@ -205,3 +211,7 @@ body {
     border-radius: 24px;
   }
 }
+
+
+
+
